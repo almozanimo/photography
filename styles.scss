@@ -1,0 +1,67 @@
+//variables
+$textcolor: #565656;
+$navcolor: #333;
+
+
+body {
+    color: $textcolor;
+}
+
+
+//nesting
+
+
+navbartop {
+    ul {
+        margin: 0;
+        padding:0;
+    }
+}
+
+table {
+    td {
+        tr {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+        }
+    }
+}
+
+//Inheritance
+
+.button1 {
+    background-color: #4CAF50; //Green
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.button2 {
+    @extend .button1;  //inherting code from button.1
+    background-color: black;
+    border-radius: 4px;
+}
+.button3 {
+    @extend .button1;
+    background-color: cornflowerblue;
+    border-radius: 8px;
+}
+.button4 {
+    @extend .button1;
+    background-color: crimson;
+    border-radius: 12px;
+}
+.button5 {
+    @extend .button1;
+    background-color: darkorchid;
+    border-radius: 50%;
+}
+
